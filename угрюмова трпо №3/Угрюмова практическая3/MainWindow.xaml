@@ -1,0 +1,38 @@
+﻿<Window x:Class="Угрюмова_практическая3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Угрюмова_практическая3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <StackPanel Orientation="Vertical">
+            <Label Content="Первое число"
+                   FontSize="20"/>
+            <TextBox Name="first_txt"
+                     FontSize="20"/>
+            <Label Content="Второе число"
+                   FontSize="20"/>
+            <TextBox Name="second_txt"
+                     FontSize="20"/>
+            <Label Content="Операция"
+                   FontSize="20"/>
+            <ComboBox
+                Name="combobox1">
+                <ComboBoxItem Content="+"/>
+                <ComboBoxItem Content="-"/>
+                <ComboBoxItem Content="*"/>
+                <ComboBoxItem Content="/"/>
+            </ComboBox>
+            <Button Name="rezault"
+                    Content="Вычислить"
+                    Click="rezault_Click"
+                    Height="30"
+                    Margin="30"/>
+            <Label Content=""
+                   Name="rezault_label"
+                   FontSize="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
